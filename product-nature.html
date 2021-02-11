@@ -1,0 +1,244 @@
+
+<html>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+
+
+    <head>
+
+
+    <style type="text/css">
+
+        body                                         {
+                                                      margin: 0;
+                                                      background: beige;
+                                                     }
+
+        Header                                       {
+                                                      height: 150px;
+                                                      background-color: #d3c6d3;
+                                                      width: 100%;
+                                                      margin-bottom: 0px;
+                                                      border-bottom: 5px solid orange;
+                                                      display: flex;
+
+
+                                                     }
+
+        Header .wrapper                              {
+                                                      width:90%;
+                                                      display: flex;
+                                                      justify-content: space-between;
+                                                      margin: auto;
+                                                      align-items:center;
+                                                      overflow: auto;
+                                                      flex-wrap: wrap;
+                                                      color: white;
+                                                     }
+
+                  .container                         {
+                                                      display: flex;
+                                                      flex-direction: row;
+                                                      align-items: baseline;
+                                                      justify-content: center;
+                                                      color: white;
+                                                      overflow: hidden;
+                                                      flex-wrap: wrap;
+                                                      width: 90%;
+                                                      margin: auto;
+                                                      flex-wrap: wrap;
+                                                     }
+
+
+
+        #branding h1   span                          {
+                                                      font-size:65%;
+                                                      text-shadow: 0px 0px;
+                                                      color: #e8f1f8;
+                                                     }
+
+        #branding ul                                 {
+                                                      list-style: none;
+                                                     }
+
+        #branding li                                 {
+                                                      float: left;
+                                                      margin-left: 25px;
+                                                     }
+
+        header nav a                                 {
+                                                      text-decoration: none;
+                                                      font-size: 20px;
+                                                     }
+
+        header nav a:hover                           {
+                                                      font-weight: bold;
+                                                      text-decoration: underline;
+                                                     }
+
+
+       #showcase                                    {
+                                                     background-image: url("Nature Essential oil with masculine scent layered.jpg");
+                                                     height:500px;
+                                                     background-repeat: no-repeat;
+                                                     background-size: cover;
+                                                     background-position: bottom;
+                                                     opacity:1;
+                                                     justify-content: :flex-start;
+                                                     margin-left:0;
+                                                    }
+
+       #showcase h1                                 {
+                                                     font-size: 45px;
+                                                    }
+
+       #showcase h2                                {
+                                                    width: 450px;
+                                                    text-align: center;
+                                                    margin: auto;
+                                                    text-align: justify;
+                                                    line-height: 1.5;
+                                                   }
+
+
+       footer                                      {
+                                                    height: 100px;
+                                                    background: gray;
+                                                    margin-top: 100px;
+                                                    display: flex;
+                                                   }
+
+#product                                           {
+                                                    display: flex;
+                                                    align-items: baseline: center;
+                                                    color: blue;
+                                                    justify-content: : space-between;
+                                                    width:90%;
+                                                    margin: auto;
+                                                    margin-top:50px;
+                                                  }
+
+
+  #product .text1                                  {
+                                                    flex:2;
+                                                    text-align: justify;
+                                                    color:gray;
+                                                   }
+
+  #product .text2 .guarantee                       {
+                                                    font-size: 15px;
+                                                   }
+
+  #product .text2                                  {
+                                                    flex:1 ;
+                                                    margin-left: 70px;color:
+                                                    margin-top:inherit;
+                                                   }
+
+       @media screen and (max-width:780px)         {#showcase                                     {
+                                                                                                   background-color: green;
+                                                                                                   background-image: none;
+                                                                                                  }
+
+
+                                                   }
+
+  @media screen and (max-width:780px)              {#product,
+                                                    #product .text2                               {
+                                                                                                   flex-direction: column;
+                                                                                                   margin: auto;
+                                                                                                   justify-content: flex-end;
+                                                                                                   width: 320px;
+                                                                                                  }
+                                                  }
+@media screen and (max-width:342px)             {#Product                                       {
+                                                                                                   margin: auto;
+                                                                                                  }
+
+
+                                                   }
+
+
+</style>
+
+
+</<head>
+
+
+     <body>
+
+       <header id="branding">
+
+          <div class="wrapper">
+            <div class="brand-text">
+               <h1><img src="Nature%20Essential%20oils%20logo.jpg" width="5%" class="logo-image"> Nature Believe<span> Essential Oils</span></h1>
+             </div>
+
+           <nav>
+             <ul>
+               <li><a href="nature believe essential oil blends.html">Home </a></li>
+               <li><a href="about-nature.html">About</a></li>
+               <li><a href="product-nature.html">Products</a></li>
+             </ul>
+           </nav>
+
+         </div>
+         </header>
+
+
+         <section  id="showcase">
++
+           <div class="container">
+
+             <div class="showcase-text">
+               <h1>Pure Oil Solutions From Nature</h1>
+
+                 <h2 class="text-h2">Our goal is to provide natural and chemical-free oil solutions for the face,
+                 body and hair, in a world where it is hard to find fully natural essential oil solutions  </h2>
+             </div>
+
+           </div>
+
+         </section>
+
+<section id="product">
+
+   <div class="text1">
+
+           <h2 > Our Nature Believe blend includes only natural organic oil components.
+            You deserve the natural, chemical-free essential oil blends.
+            So, we are commited to your continuous, long-term happiness with our cuurent and futureproducts
+           </h2>
+   </div>
+
+     <div class="text2">
+          <h1> Here is what we are offering to gain your loyalty as valued customers:
+
+          <h1>1) Try our Starter kit.<br><span class="guarantee">(money-back guarantee)</span></h1>
+
+
+          <h1>2) Sign up and order according to your daily/monthly use.Enjoy 15% member discounts.
+                </h1>
+
+
+
+    </div>
+
+
+  </div>
+
+ </section>
+
+
+
+   <footer>
+             <div class="container">
+                    <h2> &copy;2020 | All Rights Reserved</h2>
+             </div>
+         </footer>
+
+
+
+</html>
