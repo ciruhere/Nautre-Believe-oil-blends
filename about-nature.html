@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+
+
+    <head>
+
+
+    <style type="text/css">
+
+        body                                         {
+                                                      margin: 0;
+                                                      background: beige;
+                                                     }
+
+        Header                                       {
+                                                      height: 150px;
+                                                      background-color: #d3c6d3;
+                                                      width: 100%;
+                                                      margin-bottom: 0px;
+                                                      border-bottom: 5px solid orange;
+                                                      display: flex;
+
+
+                                                     }
+
+               .wrapper                              {
+                                                      width:90%;
+                                                      display: flex;
+                                                      justify-content: space-between;
+                                                      margin: auto;
+                                                      align-items:center;
+                                                      overflow: auto;
+                                                      flex-wrap: wrap;
+                                                      color: white;
+                                                     }
+
+                  .container                         {
+                                                      display: flex;
+                                                      flex-direction: row;
+                                                      align-items: baseline;
+                                                      justify-content: center;
+                                                      color: white;
+                                                      overflow: hidden;
+                                                      flex-wrap: wrap;
+                                                      width: 90%;
+                                                      margin: auto;
+                                                      flex-wrap: wrap;
+                                                     }
+
+        #branding h1                                 {
+                                                      font-size: 50px;
+                                                      border-bottom:orangered 2px;
+                                                      text-shadow:3px 2px red;
+                                                     }
+
+        #branding h1 .span-font                      {
+                                                      font-size:65%;
+                                                      text-shadow: 0px 0px;
+                                                      color: #e8f1f8;
+                                                     }
+
+        #branding ul                                 {list-style: none;
+                                                     }
+
+        #branding li                                 {
+                                                      float: left;
+                                                      margin-left: 25px;
+                                                     }
+
+        #branding img                               {
+                                                     border: 3px solid red;
+                                                     -webkit-border-radius: ;
+                                                     -moz-border-radius: ;
+                                                     border-radius:50%;}
+
+        header nav a                                 {
+                                                      text-decoration: none;
+                                                      font-size: 20px;
+                                                     }
+
+        header nav a:hover                           {
+                                                      font-weight: bold;
+                                                      text-decoration: underline;
+                                                     }
+
+        #showcase                                    {
+                                                      background-image: url(Nature%20Essential%20oils%20for%20men%20and%20women.html);
+                                                      height:500px;
+                                                      background-repeat: no-repeat;
+                                                      background-size: contain;
+                                                      background-position: bottom;
+                                                      display: flex;
+                                                      opacity:1;
+                                                      margin: auto;
+                                                     }
+
+        #showcase h1                                 {
+                                                      font-size: 45px;
+                                                     }
+
+        #showcase h2                                {
+                                                     width: 450px;
+                                                     text-align: center;
+                                                     margin: auto;
+                                                     text-align: justify;
+                                                     line-height: 1.5;
+                                                    }
+
+        #bottles                                    {
+                                                     display: flex;
+                                                     justify-content: space-around;
+                                                    }
+
+        #bottles .bottle                            {
+                                                     margin-top:150px;
+                                                     text-align:center;
+                                                     transition-property:all;
+                                                     transition:2s;
+                                                    }
+
+        #bottles .bottle:hover                      {
+                                                     opacity: .5;
+                                                     border:3px solid gray;
+                                                     padding:0;
+
+                                                    }
+
+        footer                                      {
+                                                     height: 100px;
+                                                     background: gray;
+                                                     margin-top: 100px;
+                                                     display: flex;
+                                                    }
+
+      #alltexts                                     {display: flex;
+                                                     text-align:justify;
+                                                     margin:auto;
+                                                     width: 90%;
+                                                    }
+
+        #alltexts .text1                                    {}
+
+       #alltexts .text2                                    {
+                                                     margin-left: 120px;
+
+                                                    }
+
+  @media screen and (max-width:1135px)       {header .wrapper,#alltexts
+                                                                     {flex-direction: column;
+                                                                      width: 90%;
+                                                                     }
+
+              #alltexts .text2                                       {margin-left:auto ;
+                                                                     }
+
+                                                    }
+
+
+        @media screen and (max-width:780px)         {#bottles,header nav        {flex-direction: column;
+                                                                                 justify-content: center;
+                                                                                 margin: auto;
+
+                                                                     }
+
+
+        #branding h1                                 {font-size: 30px;
+                                                     text-align: center;
+                                                     }
+
+        header nav                                   {
+                                                      text-align:center;
+                                                     }
+
+    header nav li a                                  {
+                                                      font-size:15px;
+                                                     }
+
+
+
+        header .wrapper                             {
+                                                     flex-direction: column;
+                                                     justify-content: center;
+                                                    }
+
+        header .brand-text,
+        #bottles .bottle,
+        header nav,                               {
+                                                   color: red;
+                                                   justify-content: center;
+                                                   align-items: center;
+                                                   font-size: 35px;
+                                                  }
+
+  @media screen and (max-width:780px)             {#showcase                                       {
+                                                                                                     background-color: orange;
+                                                                                                     background-image: none;
+                                                  }
+
+  #showcase h1                                    {font-size: 35px;}
+
+  }
+
+
+        @media screen and (max-width:320px) {#branding h1,
+                                             #branding nav,
+                                             #bottles .bottle,
+                                             #alltexts                {                                                                                  {
+                                                                       width: 100%;
+                                                                      }
+
+     #branding img                                                    {
+                                                                       visibility: hidden;
+                                                                       opacity:.2;
+                                                                      }
+                                            }
+
+
+        </style>
+
+    </head>
+
+
+    <body>
+
+      <header id="branding">
+
+         <div class="wrapper">
+           <div class="brand-text">
+              <h1><img src="Nature%20Essential%20oils%20logo.jpg" width="5%" class=logo-image> Nature Believe<span class="span-font"> Essential Oils</span></h1>
+            </div>
+
+          <nav>
+            <ul>
+              <li><a href="nature belive essential oil blends.html">Home </a></li>
+              <li><a href="about-nature.html">About</a></li>
+              <li><a href="product-nature.html">Products</a></li> </li>
+            </ul>
+          </nav>
+
+        </div>
+        </header>
+
+
+      <section  id="showcase">
+
+        <div class="container">
+
+          <div class="showcase-text">
+            <h1>Pure Oil Solutions From Nature</h1>
+
+              <h2 class="text-h2">Our goal is to provide natural and chemical-free oil solutions for the face,
+              body and hair, in a world where it is hard to find fully natural essential oil solutions  </h2>
+          </div>
+
+        </div>
+
+      </section>
+
+  <section id="alltexts">
+
+      <main>
+         <div class="text1">
+
+          <h1>What we want to achieve:</h1>
+          <p>We have dozens of high traffic websites that need content writers. We supply you the topics, you write it and get paid between
+           $.01-$.03 per
+           word. Most articles range from 400-1000 words and the topics are diverse. Importantly, writers must be available for writing at
+           least 10 articles per month, however there is no limit. Articles must be 100% unique and largely without syntax or grammatical errors.
+          In order to be considered, tell us about yourself below and submit a sample article. The article submitted will not be published or used for any
+           purpose other than review. Once we review (usually within 48 hours), we will email you. It's a flexible and dynamic side gig.
+
+          Sign Up To WriteWe have dozens of high traffic websites that need content writers. We supply you the topics, you write it and get paid
+          between $.01-$.03 per word. Most articles range from 400-1000 words and the topics are diverse. Importantly, writers must be available
+           for writing at least 10 articles per month, however there is no limit. Articles must be 100% unique and largely without syntax or grammatical
+           errors.
+          In order to be considered, tell us about yourself below and submit a sample article. The article submitted will not be published or used for
+          any purpose other than review. Once we review (usually within 48 hours), we will email you. It's a flexible and dynamic side gig.
+
+          Sign Up To Write</P>
+          <p> In order to be considered, tell us about yourself below and submit a sample article. The article submitted will not be published or used for
+            any purpose other than review. Once we review (usually within 48 hours), we will email you. It's a flexible and dynamic side gig.
+
+            Sign Up To Write</P>
+
+        </div>
+
+      </main>
+
+      <aside>
+        <div class="text2">
+
+              <h2>Our goal: </h2>
+              <p>We have dozens of high traffic websites that need content writers. We supply you the topics, you write it and get paid between $.01-$.03 per word. Most articles range from 400-1000 words and the topics are diverse. Importantly, writers must be available for writing at least 10 articles per month, however there is no limit. Articles must be 100% unique and largely without syntax or grammatical errors.
+               In order to be considered, tell us about yourself below and submit a sample article. The article submitted will not be published or used for any purpose other than review. Once we review (usually within 48 hours), we will email you. It's a flexible and dynamic side gig.
+                Sign Up To Write</P>  Sign Up To WriteWe have dozens of high traffic websites that need content writers. We supply you the topics, you write it and get paid
+                  between $.01-$.03 per word. Most articles range from 400-1000 words and the topics are diverse. Importantly, writers must be available
+
+        </div>
+      </aside>
+
+      </div>
+
+   </section>
+
+      <footer>
+          <div class="container">
+                 <h2> &copy;2020 | All Rights Reserved</h2>
+
+      </footer>
